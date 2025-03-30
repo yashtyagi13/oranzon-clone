@@ -14,7 +14,7 @@ const Header: React.FC = () => {
           justifyContent: "space-between",
         }}
       >
-        <h1>Oranzon</h1>
+        <h1>NVY</h1>
         <nav>
           <Link href="/">Home</Link>
           <Link href="/about" style={{ marginLeft: "1rem" }}>
