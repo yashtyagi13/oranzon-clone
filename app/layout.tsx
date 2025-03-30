@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 
 export const metadata = {
-  title: "Oranzon Clone",
-  description: "A clone of the Oranzon website using Next.js with TypeScript",
+  title: "NVY",
+  description: "Digital Marketing Website",
 };
 
 export default function RootLayout({
