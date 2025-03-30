@@ -4,39 +4,21 @@ import { motion } from "framer-motion";
 
 const CallToAction: React.FC = () => {
   return (
-    <section
+    <motion.section
+      initial={{ scale: 0.8, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.8 }}
       style={{
-        background: "#333",
-        color: "#fff",
+        background: "#d0d0d0",
         padding: "4rem 2rem",
-        textAlign: "center"
+        textAlign: "center",
       }}
     >
-      <motion.div
-        className="container"
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        <h2 style={{ marginBottom: "1rem" }}>Let&apos;s Work Together</h2>
-        <p style={{ marginBottom: "2rem" }}>
-          Ready to create something amazing? Get in touch!
-        </p>
-        <a
-          href="/contact"
-          style={{
-            background: "#fff",
-            color: "#333",
-            padding: "0.75rem 1.5rem",
-            borderRadius: "4px",
-            fontWeight: "600"
-          }}
-        >
-          Contact Us
-        </a>
-      </motion.div>
-    </section>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <h2>Let&apos;s Work Together</h2>
+        <p>Ready to create something amazing? Get in touch!</p>
+      </div>
+    </motion.section>
   );
 };
 

@@ -6,13 +6,12 @@ export default function About() {
   return (
     <>
       <Header />
-      <main style={{ padding: "4rem 1rem", minHeight: "50vh" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <h1>About Us</h1>
-          <p style={{ marginTop: "1rem", lineHeight: "1.6" }}>
-            This page is about Oranzon and our journey in crafting digital experiences.
-          </p>
-        </div>
+      <main style={{ padding: "2rem" }}>
+        <h1>About Us</h1>
+        <p>
+          This page is about Oranzon and our journey in crafting digital
+          experiences.
+        </p>
       </main>
       <Footer />
     </>

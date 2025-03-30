@@ -6,13 +6,12 @@ export default function Contact() {
   return (
     <>
       <Header />
-      <main style={{ padding: "4rem 1rem", minHeight: "50vh" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <h1>Contact Us</h1>
-          <p style={{ marginTop: "1rem", lineHeight: "1.6" }}>
-            Get in touch with us via email at <a href="mailto:hey@oranzon.com">hey@oranzon.com</a>.
-          </p>
-        </div>
+      <main style={{ padding: "2rem" }}>
+        <h1>Contact Us</h1>
+        <p>
+          Get in touch with us via email at{" "}
+          <a href="mailto:hey@oranzon.com">hey@oranzon.com</a>.
+        </p>
       </main>
       <Footer />
     </>

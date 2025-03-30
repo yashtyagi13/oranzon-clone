@@ -5,77 +5,53 @@ import { motion } from "framer-motion";
 const services = [
   {
     title: "UI/UX Design",
-    description: "Creating intuitive and engaging interfaces that prioritize the user experience."
+    description: "Creating intuitive and engaging interfaces.",
   },
   {
     title: "Visual Identity",
-    description: "Developing cohesive brand identities by designing logos, color schemes, and typography."
+    description: "Developing cohesive brand identities.",
   },
   {
     title: "Digital Marketing",
-    description: "Designing assets and materials for effective digital marketing campaigns."
+    description: "Effective digital campaign assets.",
   },
   {
     title: "Website Design",
-    description: "Creating visually appealing and functional websites, adapted to client needs."
-  }
+    description: "Visually appealing and functional websites.",
+  },
 ];
-
-const containerVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { staggerChildren: 0.2, duration: 0.6 }
-  }
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 }
-};
 
 const Services: React.FC = () => {
   return (
-    <section style={{ padding: "4rem 0" }}>
-      <div className="container">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          style={{ textAlign: "center", marginBottom: "2rem" }}
-        >
-          Meet Our Services
-        </motion.h2>
-        <motion.div
-          className="services-grid"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+    <section style={{ padding: "4rem 2rem" }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <h2>Meet Our Services</h2>
+        <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-            gap: "2rem"
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-around",
+            marginTop: "2rem",
           }}
         >
           {services.map((service, index) => (
             <motion.div
               key={index}
-              variants={itemVariants}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 * index }}
               style={{
+                flex: "1 1 200px",
+                margin: "1rem",
+                padding: "1rem",
                 background: "#f1f1f1",
-                padding: "2rem",
-                borderRadius: "8px",
-                textAlign: "center"
               }}
             >
-              <h3 style={{ marginBottom: "1rem" }}>{service.title}</h3>
+              <h3>{service.title}</h3>
               <p>{service.description}</p>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
