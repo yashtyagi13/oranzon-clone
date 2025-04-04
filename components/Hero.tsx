@@ -13,7 +13,8 @@ const Hero: React.FC = () => {
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <h2>Crafting </h2>
         <p>
-        fjhrj
+          Continuously endeavoring to craft outstanding experiences and narrate
+          your story in a meaningful way.
         </p>
       </div>
     </motion.section>
