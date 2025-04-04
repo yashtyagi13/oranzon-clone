@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
       style={{ background: "#e0e0e0", padding: "4rem 2rem" }}
     >
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <h2>Crafting Your Digital Identity</h2>
+        <h2>Crafting </h2>
         <p>
           Continuously endeavoring to craft outstanding experiences and narrate
           your story in a meaningful way.
